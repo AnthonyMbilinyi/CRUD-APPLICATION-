@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+
+struct Item(){
+   int id;
+    string name;
+    double price;
+
+
+}
+
+
+
+
+
+
+
+
+
+createItem(vector<Item>&items){
+  Item newItem;
+  int id;
+  cout<<"Enter item ID to create";
+  cin>>newItem.id;
+  cin.ignore();
+cout<<"Enter item Name to create";
+getline(cin,newItem.name);
+cout<<"Enter item Price to create";
+cin>>newItem.price;
+}
