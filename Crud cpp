@@ -29,4 +29,18 @@ cout<<"Enter item Name to create";
 getline(cin,newItem.name);
 cout<<"Enter item Price to create";
 cin>>newItem.price;
+
+items.push_back(newItem);
+cout>>"New item is successfully created\n";
+
+readItems(const vector<Item>&items{
+if(items.empty()){
+cout>>"\n--Item list not found---\n";
+}
+else{
+cout>>"\n ---Item list found---\n";
+}
+for(const auto&item:items){
+item.display();
+}
 }
